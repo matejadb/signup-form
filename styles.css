@@ -25,7 +25,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	width: 35%;
-	height: 100%;
 	background-image: url(img/background.jpg);
 	background-size: cover;
 }
@@ -53,7 +52,7 @@ body {
 .credit {
 	text-align: center;
 	color: #fff;
-	font-family: sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	margin-bottom: 1rem;
 }
 
@@ -64,6 +63,19 @@ body {
 /* FORM CONTAINER */
 .form-container {
 	width: 65%;
-	height: 100%;
-	background-color: blue;
+	background-color: rgb(224, 221, 221);
+}
+
+.description {
+	width: 85%;
+	padding: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+	height: 23rem;
+	width: 100%;
+	padding: 1.5rem;
+	background-color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, sans-serif;
 }

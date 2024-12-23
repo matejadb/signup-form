@@ -36,24 +36,50 @@
 			</div>
 			<form action="">
 				<div class="form">
-					<p>Let's do this!</p>
-					<div>
-						<label for="name">FIRST NAME</label>
-						<input type="text" id="name" name="user-name" />
-						<label for="surname">LAST NAME</label>
-						<input type="text" id="surname" name="user-surname" />
-					</div>
-					<div>
-						<label for="mail">EMAIL</label>
-						<input type="email" name="user-mail" id="mail" />
-						<label for="number">PHONE NUMBER</label>
-						<input type="tel" name="user-number" id="number" />
-					</div>
-					<div>
-						<label for="password">PASSWORD</label>
-						<input type="password" name="user-password" id="password" />
-						<label for="confirm">CONFIRM PASSWORD</label>
-						<input type="password" name="confirm-password" id="confirm" />
+					<h2 class="title">Let's do this!</h2>
+					<div class="form-columns">
+						<!-- Column 1 -->
+						<div class="column">
+							<div class="input-group">
+								<label for="name">FIRST NAME</label>
+								<input type="text" id="name" name="user-name" />
+							</div>
+							<div class="input-group">
+								<label for="mail">EMAIL</label>
+								<input type="email" name="user-mail" id="mail" />
+							</div>
+							<div class="input-group">
+								<label for="password">PASSWORD</label>
+								<input
+									type="password"
+									name="user-password"
+									id="password"
+									minlength="6"
+									required
+								/>
+							</div>
+						</div>
+						<!-- Column 2 -->
+						<div class="column">
+							<div class="input-group">
+								<label for="surname">LAST NAME</label>
+								<input type="text" id="surname" name="user-surname" />
+							</div>
+							<div class="input-group">
+								<label for="number">PHONE NUMBER</label>
+								<input type="tel" name="user-number" id="number" />
+							</div>
+							<div class="input-group">
+								<label for="confirm">CONFIRM PASSWORD</label>
+								<input
+									type="password"
+									name="confirm-password"
+									id="confirm"
+									minlength="6"
+									required
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 				<button type="submit">Create Account</button>
